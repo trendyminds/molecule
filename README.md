@@ -19,3 +19,6 @@ To install the plugin, follow these instructions.
         composer require trendyminds/molecule
 
 3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Molecule.
+
+## Credits
+Icon by [Aaron Humphreys](https://dribbble.com/AarhCreative) &mdash; [Dribbble post](https://dribbble.com/shots/3506937-Free-iOS-App-Icons)
