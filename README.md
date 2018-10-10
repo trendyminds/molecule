@@ -1,4 +1,4 @@
-# Molecule
+# <img src="resources/img/logo.svg" alt="Molecule logo"> Molecule
 
 Grab Twig components from outside the primary template folder
 
