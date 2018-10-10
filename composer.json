@@ -1,0 +1,43 @@
+{
+    "name": "trendyminds/molecule",
+    "description": "Grab Twig components from outside the primary template folder",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "molecule"
+    ],
+    "support": {
+        "docs": "https://github.com/trendyminds/molecule/blob/master/README.md",
+        "issues": "https://github.com/trendyminds/molecule/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TrendyMinds",
+            "homepage": "https://trendyminds.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "trendyminds\\molecule\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Molecule",
+        "handle": "molecule",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/trendyminds/molecule/master/CHANGELOG.md",
+        "components": {
+            "moleculeService": "trendyminds\\molecule\\services\\MoleculeService"
+        },
+        "class": "trendyminds\\molecule\\Molecule"
+    }
+}

@@ -1,0 +1,32 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Molecule plugin for Craft CMS 3.x
+ *
+ * Molecule Settings.twig
+ *
+ * @author    TrendyMinds
+ * @copyright Copyright (c) 2018 TrendyMinds
+ * @link      https://trendyminds.com
+ * @package   Molecule
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{{ forms.textField({
+    label: 'Component directory location',
+    instructions: 'Enter the path to your components directory that Craft should read from.',
+    id: 'pathComponent',
+    name: 'pathComponent',
+    value: settings['pathComponent']})
+}}
+
+{{ forms.textField({
+    label: 'Icon directory location',
+    instructions: 'Enter the path to your icon directory that Craft should read from.',
+    id: 'pathIcon',
+    name: 'pathIcon',
+    value: settings['pathIcon']})
+}}
