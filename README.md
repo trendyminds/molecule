@@ -1,5 +1,7 @@
 # <img src="resources/img/logo.svg" width="35" alt="Molecule logo"> Molecule
 
+## Components
+
 Grab Twig components from outside the primary template folder. Useful for creating folder structures like the following:
 ```
 ├── components/
@@ -7,7 +9,7 @@ Grab Twig components from outside the primary template folder. Useful for creati
 │   │   ├── index.css
 │   │   ├── index.jsx
 │   │   ├── index.twig
-│   │   └── READMD.md
+│   │   └── README.md
 │   ├── Gallery/
 │   ├── Hero/
 │   └── VideoEmbed/
@@ -32,6 +34,37 @@ Then include in your Twig templates using the following syntax:
     newWindow: true
   })
 }}
+```
+
+## Icon Components
+If you have an `Icon/` component there's an additional `craft.molecule.icon()` helper you can use to output the SVG directly into your templates.
+
+```
+├── components/
+│   ├── Icon/
+│   │   ├── images/
+│   │   │    ├── arrow.svg
+│   │   │    ├── play-button.svg
+│   │   │    └── twitter.svg
+│   │   ├── index.css
+│   │   └── index.jsx
+│   ├── Gallery/
+└── public/
+    ├── cpresources/
+    ├── index.php
+    └── .htaccess
+```
+
+```twig
+{{craft.molecule.icon("twitter", { class: "custom_class" })}}
+```
+
+will compile to:
+
+```html
+<span class="Icon Icon--twitter custom_class">
+  <!-- SVG contents of twitter.svg -->
+</span>
 ```
 
 ## Requirements
