@@ -8,8 +8,13 @@ Grab Twig components from outside the primary template folder. Useful for creati
 │   │   ├── index.jsx
 │   │   ├── index.twig
 │   │   └── READMD.md
+│   ├── Gallery/
 │   ├── Hero/
+│   └── VideoEmbed/
 └── public/
+    ├── cpresources/
+    ├── index.php
+    └── .htaccess
 ```
 
 Then include in your Twig templates using the following syntax:
