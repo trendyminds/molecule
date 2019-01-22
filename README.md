@@ -2,7 +2,6 @@
 
 Grab Twig components from outside the primary template folder. Useful for creating folder structures like the following:
 ```
-/
 ├── components/
 │   ├── ButtonPrimary/
 │   │   ├── index.css
