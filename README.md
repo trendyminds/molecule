@@ -17,6 +17,13 @@ Grab Twig components from outside the primary template folder. Useful for creati
     └── .htaccess
 ```
 
+Setup your Twig partial:
+```twig
+<a href="{{url}}"{% if newWindow is defined and newWindow %} target="_blank"{% endif %}>
+  {{label}}
+</a>
+```
+
 Then include in your Twig templates using the following syntax:
 ```twig
 {{craft.molecule.get("ButtonPrimary", {
