@@ -21,9 +21,6 @@ use Craft;
  */
 class MoleculeVariable
 {
-    // Public Methods
-    // =========================================================================
-
     public function get(string $componentName, array $componentVariables = [])
     {
         return Molecule::$plugin->moleculeService->getComponent($componentName, $componentVariables);

@@ -25,9 +25,6 @@ use yii\base\Exception;
  */
 class MoleculeService extends Component
 {
-    // Public Methods
-    // =========================================================================
-
     /**
      * Gets the named component and populates the template with the variables passed to it
      *

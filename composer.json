@@ -1,8 +1,8 @@
 {
     "name": "trendyminds/molecule",
-    "description": "Grab Twig components from outside the primary template folder",
+    "description": "Grab Twig components, CSS and JS files outside the primary template folder",
     "type": "craft-plugin",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "keywords": [
         "craft",
         "cms",

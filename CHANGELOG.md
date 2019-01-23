@@ -1,5 +1,10 @@
 # Release Notes for Molecule
 
+## 1.1.1 - 2019-01-23
+
+### Changed
+- Small adjustments to ensure updates display in control panel
+
 ## 1.1.0 - 2019-01-23
 
 ### Changed
