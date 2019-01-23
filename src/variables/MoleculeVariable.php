@@ -24,13 +24,13 @@ class MoleculeVariable
     // Public Methods
     // =========================================================================
 
-    public function get($file, array $vars = [])
+    public function get(string $componentName, array $componentVariables = [])
     {
-        return Molecule::$plugin->moleculeService->get($file, $vars);
+        return Molecule::$plugin->moleculeService->getComponent($componentName, $componentVariables);
     }
 
-    public function icon($name, array $vars = [])
+    public function icon(string $iconName, array $iconVariables = [])
     {
-        return Molecule::$plugin->moleculeService->icon($name, $vars);
+        return Molecule::$plugin->moleculeService->getIcon($iconName, $iconVariables);
     }
 }
