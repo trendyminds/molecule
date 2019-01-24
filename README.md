@@ -1,8 +1,9 @@
 # <img src="resources/img/logo.svg" width="35" alt="Molecule logo"> Molecule
 
-## Components
+## Why Molecule?
 
-Grab Twig components from outside the primary template folder. Useful for creating folder structures like the following:
+Molecule allows you to grab Twig components from outside the template folder. This is useful if you want to keep your Twig partials, CSS, React/Vue files, etc in a single component folder. Now all of your components are nicely organized in individual folder structures!
+
 ```
 ├── components/
 │   ├── ButtonPrimary/
@@ -19,7 +20,9 @@ Grab Twig components from outside the primary template folder. Useful for creati
     └── .htaccess
 ```
 
-Setup your Twig partial:
+## Example use
+
+Setup your `ButtonPrimary/index.twig` partial:
 ```twig
 <a href="{{url}}"{% if newWindow is defined and newWindow %} target="_blank"{% endif %}>
   {{label}}
@@ -34,6 +37,21 @@ Then include in your Twig templates using the following syntax:
     newWindow: true
   })
 }}
+```
+
+You can even include components in other components!
+
+**/components/Hero/index.twig**
+```twig
+<div class="Hero">
+  <img src="myImage.jpg" alt="A short description">
+
+  {{craft.molecule.get("ButtonPrimary", {
+      url: "#",
+      label: "Learn more"
+    })
+  }}
+</div>
 ```
 
 ## Icon Components
