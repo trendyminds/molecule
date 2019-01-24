@@ -1,5 +1,7 @@
 # <img src="resources/img/logo.svg" width="35" alt="Molecule logo"> Molecule
 
+https://plugins.craftcms.com/molecule
+
 ## Why Molecule?
 
 Molecule allows you to grab Twig components from outside the template folder. This is useful if you want to keep your Twig partials, CSS, React/Vue files, etc in a single component folder. Now all of your components are nicely organized in individual folder structures!
