@@ -1,6 +1,6 @@
 # <img src="resources/img/logo.svg" width="35" alt="Molecule logo"> Molecule
 
-<img src="resources/img/header.png" alt="Your component structure and Craft CMS in harmony">
+<img src="resources/img/banner.png" alt="Your component structure and Craft CMS in harmony">
 
 ## Why Molecule?
 
