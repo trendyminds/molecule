@@ -87,6 +87,14 @@ will compile to:
 </span>
 ```
 
+## Testimonials
+### Matt Rothenberg @mattrothenberg
+> @aaronbushnell @CraftCMS I went all in 😜.
+>
+>Feels so nice to be able to "compose" components in a React-y way, too. https://twitter.com/mattrothenberg/status/1094693570177654784/photo/1
+>
+> <img src="resources/img/testimonials/01.png" alt="AspectRatioBox component from Matt Rothenberg" width="400">
+
 ## Requirements
 
 This plugin requires Craft CMS 3.0.0-beta.23 or later.
