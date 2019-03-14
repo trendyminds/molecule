@@ -40,7 +40,7 @@ class MoleculeService extends Component
             $filePath = "{$componentName}.twig";
         }
 
-        $fullFile = Molecule::$plugin->settings->pathComponent . $filePath;
+        $fullFile = Craft::parseEnv(Molecule::$plugin->settings->pathComponent) . $filePath;
 
         if (!is_readable($fullFile)) {
             throw new Exception("Your requested component at {$fullFile} could not be found.");
@@ -61,7 +61,7 @@ class MoleculeService extends Component
      */
     public function getIcon(string $iconName, array $iconVariables = [])
     {
-        $iconPath = Molecule::$plugin->settings->pathIcon . $iconName . '.svg';
+        $iconPath = Craft::parseEnv(Molecule::$plugin->settings->pathIcon) . $iconName . '.svg';
 
         if (!is_readable($iconPath)) {
             throw new Exception("Your requested icon at {$iconPath} could not be found.");
