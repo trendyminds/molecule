@@ -1,5 +1,10 @@
 # Release Notes for Molecule
 
+## 1.2.0 - 2019-03-15
+
+### Added
+- Allow environment variables and aliases for path settings ((#2)[https://github.com/trendyminds/molecule/pull/2])—thanks [@coryzibell](https://github.com/coryzibell)!
+
 ## 1.1.1 - 2019-01-23
 
 ### Changed
