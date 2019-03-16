@@ -15,18 +15,22 @@
 
 {% import "_includes/forms" as forms %}
 
-{{ forms.textField({
+{{ forms.autosuggestField({
     label: 'Component directory location',
     instructions: 'Enter the path to your components directory that Craft should read from.',
     id: 'pathComponent',
     name: 'pathComponent',
+    suggestEnvVars: true,
+    suggestAliases: true,
     value: settings['pathComponent']})
 }}
 
-{{ forms.textField({
+{{ forms.autosuggestField({
     label: 'Icon directory location',
     instructions: 'Enter the path to your icon directory that Craft should read from.',
     id: 'pathIcon',
     name: 'pathIcon',
+    suggestEnvVars: true,
+    suggestAliases: true,
     value: settings['pathIcon']})
 }}
